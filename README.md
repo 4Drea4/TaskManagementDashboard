@@ -1,5 +1,5 @@
 # Task Management Dashboard
-*Andrea E December 10th 2025*
+*Andrea E December 10th 2025*<br>
 **Today is National National Gazpacho Day!**
 
 [!AltImage]()
@@ -55,19 +55,18 @@
 ### Resources
 
   #### Lessons:
-  *In order to reference certain lessons with ease I am placing them here:
-  * Implement list rendering with proper key management : 
-  * Add sorting functionality
-  * Add a search bar to search for tasks 
-  * Create a controlled form for adding/editing tasks
-  *  Handle form submission
-  * Validation Feedback
-  * Local Storage
+  *In order to reference certain lessons with ease I am placing them here:*
+  * [Implement list rendering with proper key management](https://ps-lms.vercel.app/curriculum/se/415/lab-3)
+  * [Form](https://ps-lms.vercel.app/curriculum/se/415/lab-3): 
+          - Create a controlled form for adding/editing tasks
+          - Handle form submission
+  * [Local Storage:]() 
+  * [Error Handling](https://perscholas.instructure.com/courses/2978/pages/module-6-typescript-and-advanced-javascript)
 
 
   #### Websites
-  [Filtering](https://www.akkodis.com/en-us/careers/jobs/react-developer-dearborn/US_EN_6_971578_1607473)
+- [Filtering](https://www.akkodis.com/en-us/careers/jobs/react-developer-dearborn/US_EN_6_971578_1607473)<br>
   #### Videos
-  [Filter](https://www.youtube.com/watch?v=2iEfZWz1jvs)
-  [Utilities](https://medium.com/@abhishekmaran/7-essential-javascript-utility-functions-for-your-web-projects-3f9227e0b4f7)
-  [Local Storage](youtube.com/watch?v=-ZRDZyUjEEI&embeds_referring_euri=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dhow%2Bdo%2Bi%2Bimplement%2Blocal%2Bstorage%2Bin%2Bmy%2Bjs%2Bproject%26oq%3Dhow%2Bdo%2Bi%2Bimplement%2Blocal%2Bstorage%2Bin%2Bmy%2Bjs%26g&source_ve_path=Mjg2NjY)
+- [Filter](https://www.youtube.com/watch?v=2iEfZWz1jvs)
+- [Utilities](https://medium.com/@abhishekmaran/7-essential-javascript-utility-functions-for-your-web-projects-3f9227e0b4f7)
+- [Local Storage](youtube.com/watch?v=-ZRDZyUjEEI&embeds_referring_euri=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dhow%2Bdo%2Bi%2Bimplement%2Blocal%2Bstorage%2Bin%2Bmy%2Bjs%2Bproject%26oq%3Dhow%2Bdo%2Bi%2Bimplement%2Blocal%2Bstorage%2Bin%2Bmy%2Bjs%26g&source_ve_path=Mjg2NjY)
