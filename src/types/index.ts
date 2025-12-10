@@ -68,16 +68,22 @@ export interface StatsDisplayProps{
 stats: TaskStats;
 }
 
-//form props
-export interface taskInput {
-    
-}
-//search props
 
+
+//task input props
+export interface taskInputProps {
+    onTextChange: (text: string) => void;
+    placeholder?: string;
+    initalValue?:string;
+}
 
 //sort
 
-
+//search
+export interface SearchProps {
+placeholder?:string,
+onSearch?: (text:string) => void
+}
 
 // I want to add a funny message to the delete button if i have time
 // export type AlertType = 'succes' | 'error' | 'warning' | 'info';
