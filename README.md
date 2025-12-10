@@ -51,8 +51,18 @@
  
 ### Technologies Used
 ### Reflections
+1. How you implemented React and TypeScript features:
+    * 
+2. The challenges you encountered and how you overcame them
+    * 
+3. Your approach to component composition and state management
+    * 
+
+
 ### Difficulties/ Troubleshooting
-### Resources
+
+
+### Resources:
 
   #### Lessons:
   *In order to reference certain lessons with ease I am placing them here:*
@@ -64,9 +74,9 @@
   * [Error Handling](https://perscholas.instructure.com/courses/2978/pages/module-6-typescript-and-advanced-javascript)
 
 
-  #### Websites
+#### Websites
 - [Filtering](https://www.akkodis.com/en-us/careers/jobs/react-developer-dearborn/US_EN_6_971578_1607473)<br>
-  #### Videos
+#### Videos
 - [Filter](https://www.youtube.com/watch?v=2iEfZWz1jvs)
 - [Utilities](https://medium.com/@abhishekmaran/7-essential-javascript-utility-functions-for-your-web-projects-3f9227e0b4f7)
 - [Local Storage](youtube.com/watch?v=-ZRDZyUjEEI&embeds_referring_euri=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dhow%2Bdo%2Bi%2Bimplement%2Blocal%2Bstorage%2Bin%2Bmy%2Bjs%2Bproject%26oq%3Dhow%2Bdo%2Bi%2Bimplement%2Blocal%2Bstorage%2Bin%2Bmy%2Bjs%26g&source_ve_path=Mjg2NjY)
