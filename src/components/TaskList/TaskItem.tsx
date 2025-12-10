@@ -5,17 +5,18 @@ export const TaskItem: React.FC<TaskItemProps> =
 (props) => {
     const handleChange = (event:React.ChangeEvent<HTMLSelectElement>) => {
         const taskStatus = event.target.value as TaskStatus; 
-        props.onStatusChange(props.task.id, taskStatus);}
+        props.onStatusChange(props.task.id, taskStatus);
+    };
 
         const handleDelete = () => {
             props.onDelete(props.task.id);
-        }
+        };
     
-}
+
 return (
     <div className ="task">
         <h4>{props.task.title}</h4>
-        <p> Due Date {props.task.dueDate}</p>
+        <p> Due Date: {props.task.dueDate}</p>
         <span>{props.task.priority}</span>
        <p>{props.task.description}</p>
 
