@@ -1,4 +1,4 @@
-export type successState = ''
+// export type successState = '' //will be used for alertbox util
 
 // Task Status
 export type TaskStatus='pending' | 'in-progress' | 'completed';
@@ -22,9 +22,9 @@ export interface Task{
 //TaskListProps
 export interface TaskListProps{
 tasks : Task[];
-onStatusChange : (taskId: string, newsStatus: TaskStatus) => 
+onStatusChange : (taskId: string, newStatus: TaskStatus) => 
     void;
-onDelete : (taskID:string) => void;
+onDelete : (taskId:string) => void;
 
 }
 
@@ -47,13 +47,7 @@ export interface Filters{
     priority?: TaskPriority;
 }
 
-//Text input component that handles user input
-export interface TextInputProps{
-    onTextChange: (text:string) => void;
-    placeholder?: string;
-    initialValue?: string;
 
-}
 
 // stats display 
 export interface TaskStats{
@@ -70,11 +64,19 @@ stats: TaskStats;
 
 
 
-//task input props
-export interface taskInputProps {
-    onTextChange: (text: string) => void;
-    placeholder?: string;
-    initalValue?:string;
+//what form collects
+export interface TaskFormInput {
+    title: string;
+    description:string;
+    dueDate: string;
+}
+
+//form component
+export interface TaskFormProps{
+        placeholderDescription?:string;
+        placeholderTitle?: string;
+        onSubmit: (task: TaskFormInput) => void;
+    
 }
 
 //sort
