@@ -1,8 +1,4 @@
-- Task Data Structure
-      - Component Props
-      - Form Data
-      
-      
+export type successState = ''
 
 // Task Status
 export type TaskStatus='pending' | 'in-progress' | 'completed';
@@ -39,8 +35,6 @@ export interface TaskItemProps{
     onDelete: (taskId:string) => void;
 }
 
-//Form
-
 
 //Task Filter: create a TaskFilter component that allows filtering tasks by status and TaskPriorityChangeEvent
 
@@ -75,3 +69,21 @@ stats: TaskStats;
 }
 
 //form props
+export interface taskInput {
+    
+}
+//search props
+
+
+//sort
+
+
+
+// I want to add a funny message to the delete button if i have time
+// export type AlertType = 'succes' | 'error' | 'warning' | 'info';
+
+// export interface AlertBoxProps{
+//     type: AlertType;
+//     message:string;
+//     children?: React.ReactNode;
+// }

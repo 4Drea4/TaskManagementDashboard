@@ -2,11 +2,12 @@
 *Andrea E December 10th 2025*<br>
 **Today is National National Gazpacho Day!**
 
-[!AltImage]()
+![Programming flow](task-dashboard/public/IMG_6232.jpg)
 
 
 ## Deliverables
 ### Project Planning
+**This diagram helped me better understand how to set up as well:**  ![Programming flow](task-dashboard/public/IMG_6232.jpg)<br>
  * Project Plan
  * Make dashboard my parent component
  * Create Interfaces:
@@ -76,7 +77,12 @@
 
 #### Websites
 - [Filtering](https://www.akkodis.com/en-us/careers/jobs/react-developer-dearborn/US_EN_6_971578_1607473)<br>
+- [React Hooks](https://blog.logrocket.com/using-localstorage-react-hooks/) <br>
+
 #### Videos
 - [Filter](https://www.youtube.com/watch?v=2iEfZWz1jvs)
 - [Utilities](https://medium.com/@abhishekmaran/7-essential-javascript-utility-functions-for-your-web-projects-3f9227e0b4f7)
 - [Local Storage](youtube.com/watch?v=-ZRDZyUjEEI&embeds_referring_euri=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dhow%2Bdo%2Bi%2Bimplement%2Blocal%2Bstorage%2Bin%2Bmy%2Bjs%2Bproject%26oq%3Dhow%2Bdo%2Bi%2Bimplement%2Blocal%2Bstorage%2Bin%2Bmy%2Bjs%26g&source_ve_path=Mjg2NjY)
+- [Success states](https://www.youtube.com/watch?v=V0VfR0eaz98)
+- [React Hooks](https://www.youtube.com/watch?v=jnmqrgJDqm0)
+- [Local Storage in React App](https://www.youtube.com/watch?v=N7rs5F4f6FA&t=9s)
