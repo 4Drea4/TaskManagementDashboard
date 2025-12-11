@@ -6,9 +6,10 @@ export function validationForForm(input:TaskFormInput): string {
         if (input.title.trim()) {
             return "You have to add a title";
         }
-       else if (input.description.trim()){
+        if (input.description.trim()){
             alert('Let us know the details of your task');
         }
+      
 }
 
 
