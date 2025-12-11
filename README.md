@@ -80,6 +80,7 @@
 - [React Hooks](https://blog.logrocket.com/using-localstorage-react-hooks/) <br>
 - [React and Local Storage](https://stackoverflow.com/questions/75684508/saving-in-local-storage) <br>
 - [Date to string](https://forum.freecodecamp.org/t/how-to-convert-date-to-dd-mm-yyyy-in-react/431093/2)
+- [Filter and Sorting](https://gist.github.com/thecodingloft/4e621092495de405f342dad209f8b0bb)
 
 #### Videos
 - [Filter](https://www.youtube.com/watch?v=2iEfZWz1jvs)
