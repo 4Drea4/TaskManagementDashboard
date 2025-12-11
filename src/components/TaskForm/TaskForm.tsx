@@ -57,6 +57,13 @@ return (
          </div>
          <div>
             <label htmlFor="dueDate">Due Date</label>
+            <input
+            id="dueDate"
+            name="dueDate"
+            type="date"
+            value={form.dueDate}
+            onChange={handleChange}
+            />
          </div>
 
          <button type="submit">Add Task</button>

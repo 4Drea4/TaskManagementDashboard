@@ -68,7 +68,7 @@
   #### Lessons:
   *In order to reference certain lessons with ease I am placing them here:*
   * [Implement list rendering with proper key management](https://ps-lms.vercel.app/curriculum/se/415/lab-3)
-  * [Form](https://ps-lms.vercel.app/curriculum/se/415/lab-3): 
+  * [Form](https://ps-lms.vercel.app/curriculum/se/415/lesson-8): 
           - Create a controlled form for adding/editing tasks
           - Handle form submission
   * [Local Storage:]() 
