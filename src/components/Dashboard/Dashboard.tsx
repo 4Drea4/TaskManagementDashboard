@@ -26,7 +26,10 @@ const [tasks, setTasks] = useState<Task[]>([]);
 
     
 //new task to the array
-    setTasks((prev:any) => [...prev,taskItem]); 
+    
+    function handleDelete(taskId: string){
+        setTasks((prev:any) => [...prev,taskItem]); 
+    }
 };
 
     // alert("Hey Time to get your life together, lets go!") //used this to text button
