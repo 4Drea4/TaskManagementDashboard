@@ -5,9 +5,23 @@ import { TaskForm } from '../TaskForm/TaskForm';
 // import { TaskFilter } from '../TaskFilter/TaskFilter';
 import type {Task,  TaskFormInput  } from '../../types';
 
+//have to add state
 
 export const Dashboard = () => {
+const [tasks, setTasks] = useState<Task[]>([]);
+
+
+//when taskform button is clicked
  const addTask = (formText: TaskFormInput) => {
+    const taskItem: Task ={
+
+    title: formText.title,
+    description: formText.description,
+    dueDate: formText.dueDate,
+    status: "pending",
+    priority: "medium",
+
+    };
     alert("Hey Time to get your life together, lets go!")
  };
 
