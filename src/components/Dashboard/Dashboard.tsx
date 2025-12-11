@@ -1,8 +1,8 @@
-import { React } from 'react'
-import './App.css'
-import { TaskForm } from './components/TaskForm/TaskForm'
-import { TaskItem } from './components/TaskList/TaskItem'
-import { TaskFilter } from './components/TaskFilter/TaskFilter'
+import  React  from 'react';
+import './App.css';
+import { TaskForm } from './components/TaskForm/TaskForm';
+import { TaskItem } from './components/TaskList/TaskItem';
+import { TaskFilter } from './components/TaskFilter/TaskFilter';
 
 export const Dashboard: React.FC = () => {
  
