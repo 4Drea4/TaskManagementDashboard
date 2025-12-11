@@ -14,19 +14,25 @@ export const TaskForm: React.FC<TaskFormProps> = ({
 
 
 return (
-    <form 
+   
     <form onSubmit={handleSubmit}>
         <div>
-        <label htmlFor="name"
-        <input 
-        type='text'
-        placeholder=
+            <label htmlFor="Title">Title</label>
+         <input 
+             type='text'
+             placeholder=""
+             onChange={handleChange}
         />
- </form>
+         </div>
+
+         <div>
+            <label htmlFor="Description">Description</label>
+
+
+
+         </div>
+     </form>
+     
+)  
      }
 
-
-
-        </div>
-   
-)

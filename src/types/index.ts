@@ -64,7 +64,7 @@ stats: TaskStats;
 
 
 
-//what form collects
+//what form collects the actual data
 export interface TaskFormInput {
     title: string;
     description:string;
