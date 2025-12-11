@@ -3,6 +3,7 @@ import { TaskItem } from './TaskItem';
 import type { TaskListProps } from '../../types';
 
 export const TaskList: React.FC<TaskListProps> = (props) => {
+    
     return(
         <div>
             {props.tasks.map((taskObj) => {
