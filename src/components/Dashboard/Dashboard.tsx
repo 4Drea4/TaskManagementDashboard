@@ -4,6 +4,7 @@ import { TaskForm } from '../TaskForm/TaskForm';
 // import { TaskItem } from '../TaskList/TaskItem';
 // import { TaskFilter } from '../TaskFilter/TaskFilter';
 import type {Task,  TaskFormInput  } from '../../types';
+import {useState} from 'react'
 
 //have to add state
 
@@ -14,23 +15,25 @@ const [tasks, setTasks] = useState<Task[]>([]);
 //when taskform button is clicked
  const addTask = (formText: TaskFormInput) => {
     const taskItem: Task ={
-    id: Date.now().toString(),        //used this from abraham1973 in codecademy
+    id: Date.now().toString(),        
     title: formText.title,
     description: formText.description,
     dueDate: formText.dueDate,
     status: "pending",
-    priority: "medium",
+    priority: "high",
 
     };
+
+    
 //new task to the array
-    setTasks((prev) => [...prev,newTask]); 
+    setTasks((prev:any) => [...prev,addTask]); 
 };
 
     // alert("Hey Time to get your life together, lets go!") //used this to text button
- };
+
 
   return (
-    <>
+    <div>
    
 
     {/* <TaskFilter/> */}
@@ -46,14 +49,10 @@ const [tasks, setTasks] = useState<Task[]>([]);
                 <h2>{task.title}</h2>
                 <p>{task.description}</p>
                 <p>{task.dueDate}</p>
-                <p> {task.status}</p>
-                <p>{task.priority}</p>
-        )
-    )}
-
     </div>
-  
-     
-    </>
-  )
-}
+  ))}
+    </div>
+    </div>
+  );
+
+};
