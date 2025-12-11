@@ -4,6 +4,7 @@ body{
   justify-content: center;
   background-color: #FFDDA1;
   color: #E77728;
+  margin-bottom: 10px;
 }
 .task-item , .priority, .status {
   padding: 10px;
@@ -11,6 +12,7 @@ body{
   background-color: #FFD151 ;
   color: #141301;
   border: none;
+  margin-bottom: 10px;
 }
 
 select{
@@ -20,12 +22,26 @@ select{
   border-radius: 10px;
   font-size: 18px;
   border: none;
+  margin-bottom: 10px;
 }
 
 button{
   background-color: #FFD151 ;
   color: #141301;
   border: none;
+  gap:10px;
+  margin-bottom: 10px;
 }
-/* #FFD151 */
-/* #D1462F */
+
+.task-items{
+  border: 1px solid  #D1462F;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.task label{
+  display: block;
+  margin: 10px;
+}
+/* #FFD151 yellowish*/
+/* #D1462F orangish */
