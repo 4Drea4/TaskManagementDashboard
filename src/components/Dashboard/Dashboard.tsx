@@ -1,8 +1,8 @@
 import  React  from 'react';
 // import './App.css';
-import { TaskForm } from './components/TaskForm/TaskForm';
-// import { TaskItem } from './components/TaskList/TaskItem';
-// import { TaskFilter } from './components/TaskFilter/TaskFilter';
+import { TaskForm } from '../TaskForm/TaskForm';
+// import { TaskItem } from '../TaskList/TaskItem';
+// import { TaskFilter } from '../TaskFilter/TaskFilter';
 import type { TaskFormInput  } from '../../types';
 
 export const Dashboard = () => {
