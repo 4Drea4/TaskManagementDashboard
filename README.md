@@ -2,12 +2,9 @@
 *Andrea E December 10th 2025*<br>
 **Today is National National Gazpacho Day!**
 
-![Programming flow](public/IMG_6232.jpg)
-
-
 ## Deliverables
 ### Project Planning
-**This diagram helped me better understand how to set up as well:**  ![Programming flow](task-dashboard/public/IMG_6232.jpg)<br>
+**This diagram helped me better understand how to set up as well:** ![Programming flow](public/IMG_6232.jpg)<br>
  * Project Plan
  * Make dashboard my parent component
  * Create Interfaces:
@@ -48,9 +45,13 @@
     - Add local Storage integration
     - Implement data export/import
   
-
  
 ### Technologies Used
+- Typescript
+- React
+-  JSX
+- State Management 
+
 ### Reflections
 1. How you implemented React and TypeScript features:
     *  Using Typescript and react, I attempted to manage parent and child states, rendering, controlled input, form submission, setting and updating states , rendering lists. I believe I used much of what we learned in this module aside from conditional statements. 
@@ -58,9 +59,6 @@
     * What has been beneficial so far is having so many examples to be able to reflect on. There are a lot of moving parts and unlike previous examples with rendering and using state, especially when having to do with parent and child relationships, cognitively there are many things I am trying to make the connection for that are difficult to keep up with. The complexity of this project required more planning, Javon has assisted me with this drastically I am doing my best to continue to reflect on examples, activities and labs to understand what is going on and why. Another problem I faced was not fully understanding some previous examples so not knowing when it was best to solve a problem or why. So there have been times where I am incorrectly implementing state, or not knowing where to pass callback functions.
 3. Your approach to component composition and state management
     * I added state to children components if needed. Then I used state on the dashboard due to the need for consistent interaction on it. After receiving clarity on this project Dashboard made a lot of sense when considering state and relation to children and the parent App.
-
-
-### Difficulties/ Troubleshooting
 
 
 ### Resources:
