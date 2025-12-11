@@ -53,11 +53,11 @@
 ### Technologies Used
 ### Reflections
 1. How you implemented React and TypeScript features:
-    * 
+    *  Using Typescript and react, I attempted to manage parent and child interactions, controlled input, form submission, setting and updating states and much more. (Some of which I may not get to. )
 2. The challenges you encountered and how you overcame them
-    * 
+    * What has been beneficial so far is having so many examples to be able to reflect on. There are a lot of moving parts and unlike previous examples with rendering and using state,cognitively there are many things I am trying to make the connection for that are difficult to keep up with. The complexity of this project is much more difficult due to us combining several projects into one. I am doing my best to continue to reflect on examples, activities and labs to understand what is going on and why. 
 3. Your approach to component composition and state management
-    * 
+    * I added state to children components if needed. Then I used state on the dashboard due to the need for consistent interaction on it.
 
 
 ### Difficulties/ Troubleshooting
@@ -88,3 +88,4 @@
 - [Success states](https://www.youtube.com/watch?v=V0VfR0eaz98)
 - [React Hooks](https://www.youtube.com/watch?v=jnmqrgJDqm0)
 - [Local Storage in React App](https://www.youtube.com/watch?v=N7rs5F4f6FA&t=9s)
+- [Form validation](https://www.youtube.com/watch?v=VJ1OWCQJhLk)
