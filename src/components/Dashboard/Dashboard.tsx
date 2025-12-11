@@ -1,11 +1,14 @@
 import  React  from 'react';
-import './App.css';
+// import './App.css';
 import { TaskForm } from './components/TaskForm/TaskForm';
-import { TaskItem } from './components/TaskList/TaskItem';
+// import { TaskItem } from './components/TaskList/TaskItem';
 import { TaskFilter } from './components/TaskFilter/TaskFilter';
+import type { TaskFormInput } from '../../types';
 
 export const Dashboard: React.FC = () => {
- 
+ const addTask = (formText: TaskFormInput) => {
+    
+ };
 
   return (
     <>
@@ -15,7 +18,7 @@ export const Dashboard: React.FC = () => {
      <TaskForm
      placeholderTitle="Whats your task?"
      placeholderDescription="Tell me what your task is about!"
-    //  onSubmit={handle}
+    onSubmit={addTask}
      />
 
      <TaskItem/>
