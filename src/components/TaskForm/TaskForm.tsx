@@ -36,6 +36,7 @@ return (
         <div>
             <label htmlFor="Title">Title</label>
          <input 
+            className="task-item"
             id="title"
             name="title"
              placeholder={props.placeholderTitle}
@@ -47,6 +48,7 @@ return (
          <div>
             <label htmlFor="Description">Description</label>
                 <input
+                className="task-item"
                 id="description"
                 name="description"
                 type="text"
@@ -58,6 +60,7 @@ return (
          <div>
             <label htmlFor="dueDate">Due Date</label>
             <input
+            className="task-item"
             id="dueDate"
             name="dueDate"
             type="date"
