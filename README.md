@@ -2,7 +2,7 @@
 *Andrea E December 10th 2025*<br>
 **Today is National National Gazpacho Day!**
 
-![Programming flow](task-dashboard/public/IMG_6232.jpg)
+![Programming flow](public/IMG_6232.jpg)
 
 
 ## Deliverables
@@ -89,3 +89,4 @@
 - [React Hooks](https://www.youtube.com/watch?v=jnmqrgJDqm0)
 - [Local Storage in React App](https://www.youtube.com/watch?v=N7rs5F4f6FA&t=9s)
 - [Form validation](https://www.youtube.com/watch?v=VJ1OWCQJhLk)
+- [React Essentials](https://www.youtube.com/watch?v=UUk1scVLrCQ&list=PLzxMeWYVBaYyi7bkkpjThIrSPEWp1tJRN&index=18)
