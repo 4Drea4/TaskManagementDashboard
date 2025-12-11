@@ -26,7 +26,7 @@ const [tasks, setTasks] = useState<Task[]>([]);
 
     
 //new task to the array
- setTasks((prev:any) => [...prev,taskItem]); 
+ setTasks((prev) => [...prev,taskItem]); 
     
 };
 

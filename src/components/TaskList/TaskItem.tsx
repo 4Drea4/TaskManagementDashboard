@@ -6,6 +6,7 @@ export const TaskItem: React.FC<TaskItemProps> =
     const handleChange = (event:React.ChangeEvent<HTMLSelectElement>) => {
         const taskStatus = event.target.value as TaskStatus; 
         props.onStatusChange(props.task.id, taskStatus);
+
     };
 
         const handleDelete = () => {
