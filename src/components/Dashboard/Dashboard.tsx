@@ -49,6 +49,8 @@ const [tasks, setTasks] = useState<Task[]>([]);
                 <h2>{task.title}</h2>
                 <p>{task.description}</p>
                 <p>{task.dueDate}</p>
+               <button onClick={() => deleteTaskItem(task.id)}>Delete</button>
+
                
     </div>
   ))}
