@@ -1,6 +1,7 @@
 // form and task item and item list/filter
 import { useState } from "react";
 import type { TaskFormProps , TaskFormInput } from "../../types";
+import { validationForForm } from "../../utils/taskUtils";
 
 //taskform component with type of TaskFormProps
 export const TaskForm: React.FC<TaskFormProps> = (props)=> { 
@@ -26,10 +27,19 @@ const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 //handlesubmit
 const handleSubmit = (event: React.FormEvent<HTMLFormElement> ) =>{
     event.preventDefault();
+   
+
+    //validate util
+    const error = validationForForm(form);
+    if (error) {
+        alert(error);
+        return
+    }
     props.onSubmit(form);
-    
 };
-  
+
+
+
 return (
    
     <form onSubmit={handleSubmit}>
