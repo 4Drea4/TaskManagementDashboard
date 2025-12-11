@@ -33,7 +33,7 @@ const handleSubmit = (event: React.FormEvent<HTMLFormElement> ) =>{
     const error = validationForForm(form);
     if (error) {
         alert(error);
-        return
+        return;
     }
     props.onSubmit(form);
 };
