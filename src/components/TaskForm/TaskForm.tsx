@@ -1,6 +1,7 @@
 // form and task item and item list/filter
 import { useState } from "react";
 import type { TaskFormProps , TaskFormInput } from "../../types";
+import type { Task } from "../../types";
 
 //taskform component with type of TaskFormProps
 export const TaskForm: React.FC<TaskFormProps> = (props)=> { 
@@ -13,29 +14,33 @@ const [form, setForm] = useState<TaskFormInput>({
     dueDate: "",
 });
 //handle change on task field
-const
 
+const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const {name, value} =event.target;
+    setForm((prev) => ({
+        ...prev,
+        [name] : value,
+
+    }));
+}
 
 //handlesubmit
 const handleSubmit = (event: React.FormEvent<HTMLFormElement> ) =>{
     event.preventDefault();
     props.onSubmit(form);
     
-}
-
-)
-//handlesubmit
-
-//
-       
+};
+  
 return (
    
     <form onSubmit={handleSubmit}>
         <div>
             <label htmlFor="Title">Title</label>
          <input 
-             type='text'
-             placeholder=""
+            id="title"
+            name="title"
+             placeholder={props.placeholderTitle}
+             value={form.title}
              onChange={handleChange}
         />
          </div>
@@ -43,11 +48,19 @@ return (
          <div>
             <label htmlFor="Description">Description</label>
                 <input
-
-
+                id="description"
+                name="description"
+                type="text"
+                placeholder={props.placeholderDescription}
+                value={form.description}
+                onChange={handleChange}
                 />
-
          </div>
+         <div>
+            <label htmlFor="dueDate">Due Date</label>
+         </div>
+
+         <button type="submit">Add Task</button>
      </form>
 
 )  
