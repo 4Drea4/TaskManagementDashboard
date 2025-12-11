@@ -1,7 +1,6 @@
 // form and task item and item list/filter
 import { useState } from "react";
 import type { TaskFormProps , TaskFormInput } from "../../types";
-import type { Task } from "../../types";
 
 //taskform component with type of TaskFormProps
 export const TaskForm: React.FC<TaskFormProps> = (props)=> { 
