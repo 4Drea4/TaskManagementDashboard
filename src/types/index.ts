@@ -71,7 +71,7 @@ export interface TaskFormInput {
     dueDate: string;
 }
 
-//form component
+//form component prop
 export interface TaskFormProps{
         placeholderDescription?:string;
         placeholderTitle?: string;

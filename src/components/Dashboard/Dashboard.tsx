@@ -2,17 +2,20 @@
 import { useState } from "react";
 import type { TaskFormProps , TaskFormInput } from "../../types";
 
-export const TaskForm: React.FC<TaskFormProps> = ({
-    placeholderTitle,
-    placeholderDescription,
-    onSubmit,
-})=> {
+//taskform component with type of TaskFormProps
+export const TaskForm: React.FC<TaskFormProps> = (props)=> { 
 
-}
+//setting state on form 
+const [form, setForm] = useState<TaskFormInput>({
+
+    title:"",
+    description:"",
+    dueDate: "",
+});
+
+
 
        
-
-
 return (
    
     <form onSubmit={handleSubmit}>
@@ -27,12 +30,14 @@ return (
 
          <div>
             <label htmlFor="Description">Description</label>
+                <input
 
 
+                />
 
          </div>
      </form>
-     
-)  
-     }
 
+)  
+    
+}
