@@ -79,6 +79,7 @@
 - [Filtering](https://www.akkodis.com/en-us/careers/jobs/react-developer-dearborn/US_EN_6_971578_1607473)<br>
 - [React Hooks](https://blog.logrocket.com/using-localstorage-react-hooks/) <br>
 - [React and Local Storage](https://stackoverflow.com/questions/75684508/saving-in-local-storage) <br>
+- [Date to string](https://forum.freecodecamp.org/t/how-to-convert-date-to-dd-mm-yyyy-in-react/431093/2)
 
 #### Videos
 - [Filter](https://www.youtube.com/watch?v=2iEfZWz1jvs)

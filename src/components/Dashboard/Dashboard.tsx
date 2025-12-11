@@ -14,7 +14,7 @@ const [tasks, setTasks] = useState<Task[]>([]);
 //when taskform button is clicked
  const addTask = (formText: TaskFormInput) => {
     const taskItem: Task ={
-
+    id: Date.now().toString(),        //used this from abraham1973 in codecademy
     title: formText.title,
     description: formText.description,
     dueDate: formText.dueDate,
@@ -22,7 +22,11 @@ const [tasks, setTasks] = useState<Task[]>([]);
     priority: "medium",
 
     };
-    alert("Hey Time to get your life together, lets go!")
+//new task to the array
+    setTasks((prev) => [...prev,newTask]); 
+};
+
+    // alert("Hey Time to get your life together, lets go!") //used this to text button
  };
 
   return (
