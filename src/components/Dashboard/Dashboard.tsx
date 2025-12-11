@@ -3,7 +3,8 @@ import  React  from 'react';
 import { TaskForm } from '../TaskForm/TaskForm';
 // import { TaskItem } from '../TaskList/TaskItem';
 // import { TaskFilter } from '../TaskFilter/TaskFilter';
-import type { TaskFormInput  } from '../../types';
+import type {Task,  TaskFormInput  } from '../../types';
+
 
 export const Dashboard = () => {
  const addTask = (formText: TaskFormInput) => {
@@ -21,6 +22,18 @@ export const Dashboard = () => {
     onSubmit={addTask}
      />
 
+    <div className='tasklist'>
+        {tasks.map((task) => (
+            <div key={task.id} className='task-items'>
+                <h2>{task.title}</h2>
+                <p>{task.description}</p>
+                <p>{task.dueDate}</p>
+                <p> {task.status}</p>
+                <p>{task.priority}</p>
+        )
+    )}
+
+    </div>
   
      
     </>
