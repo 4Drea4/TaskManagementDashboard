@@ -1,10 +1,10 @@
-import  React  from 'react';
 // import './App.css';
 import { TaskForm } from '../TaskForm/TaskForm';
 // import { TaskItem } from '../TaskList/TaskItem';
 // import { TaskFilter } from '../TaskFilter/TaskFilter';
 import type {Task,Filters,  TaskFormInput  } from '../../types';
-import {useState} from 'react'
+import  {useState, useEffect} from 'react'
+
 
 //have to add state
 
@@ -15,13 +15,13 @@ const [filters, setFilters] = useState<Filters>({
   priority: "all"
 });
 useEffect(()=> {
-  saveToStorage(tasks);
+  saveTasks(tasks);
   console.log("Saved");
 },[tasks]);
 //when taskform button is clicked
  const addTask = (formText: TaskFormInput) => {
     const taskItem: Task ={
-    id: "",        
+    id: "crypto.randomUUID()",        
     title: formText.title,
     description: formText.description,
     dueDate: formText.dueDate,
@@ -43,6 +43,17 @@ const deleteTask = (taskId: string) => {
     setTasks((prev) => prev.filter((task) =>task.id !==taskId));
 
 };
+
+
+  const filterTasks = tasks.filter((task) => {
+    if (filters.status && filters.status !=="all" && task.status !==filters.status) 
+      return false
+  
+      if (filters.priority && filters.priority !== "all"  && task.priority !== filters.priority){
+        return false;
+      return true;
+  }
+)
   return (
     <div>
 
