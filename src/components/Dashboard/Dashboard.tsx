@@ -16,13 +16,20 @@ const [filters, setFilters] = useState<Filters>({
   priority: "all-priority"
 });
 
-useEffect(()=> {
-  setTasks(loadTasks());
-}, []);
-useEffect(()=> {
-  saveTasks(tasks);
+useEffect(()=>{
+  const saveTasks =localStorage.getItem("tasks");
+  if (saveTasks){
+    setTasks(JSON.parse(saveTasks));
+  }
+  
+},[]);
+useEffect(() => {
+  localStorage.setItem("tasks", JSON.stringify(tasks));
   console.log("Saved");
 },[tasks]);
+
+
+
 //when taskform button is clicked
  const addTask = (formText: TaskFormInput) => {
     const taskItem: Task ={
