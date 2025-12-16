@@ -5,7 +5,8 @@ import type { Filters } from "../../types";
 export const TaskFilter: React.FC<TaskFilterProps> = ({onFilterChange}) => {
     const [filters, setFilters] = useState<Filters>({
         status:"all-status",
-        priority:"all-priority"
+        priority:"all-priority",
+        search: "",
     });
     const handleChange = (event: React.ChangeEvent<HTMLSelectElement> ) => {
         const {name, value} = event.target;
@@ -35,6 +36,18 @@ export const TaskFilter: React.FC<TaskFilterProps> = ({onFilterChange}) => {
                 className="priority"
                 value={filters.priority}
                 onChange={handleChange}>
+              
+              {/* //search  */}
+              <input
+              name='search'
+              value={filters.search}
+              onChange={(e) => {
+                const update ={ ...filters, search: e.target.value};
+                setFilters(update);
+                onFilterChange(update);
+              }}
+              placeholder="Search"
+              />
               
                 <option value="All-priority">All Priorities</option>
                 <option value="low">Low</option>

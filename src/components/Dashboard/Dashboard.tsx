@@ -12,7 +12,8 @@ export const Dashboard = () => {
 const [tasks, setTasks] = useState<Task[]>([]);
 const [filters, setFilters] = useState<Filters>({
   status:"all-status",
-  priority: "all-priority"
+  priority: "all-priority",
+  search:"",
 });
 
 useEffect(()=>{
@@ -60,6 +61,8 @@ const deleteTask = (taskId: string) => {
     if (filters.status !== "all-status" && task.status !==filters.status)
        return false;
     if (filters.priority !=="all-priority" && task.priority !== filters.priority) return false;
+
+    
     return true;
   }
 

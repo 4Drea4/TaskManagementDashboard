@@ -45,6 +45,7 @@ export interface TaskFilterProps{
 export interface Filters{
     status?:"all-status" |TaskStatus;
     priority?: "all-priority" | TaskPriority;
+    search:string;
 }
 
 
