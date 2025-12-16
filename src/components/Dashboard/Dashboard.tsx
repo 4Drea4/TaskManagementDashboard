@@ -1,9 +1,9 @@
 // import './App.css';
 import { TaskForm } from '../TaskForm/TaskForm';
 // import { TaskItem } from '../TaskList/TaskItem';
-// import { TaskFilter } from '../TaskFilter/TaskFilter';
+ import { TaskFilter } from '../TaskFilter/TaskFilter';
 import type {Task,Filters,  TaskFormInput  } from '../../types';
-import  {useState, useEffect} from 'react'
+import  React, {useState, useEffect} from 'react'
 
 
 //have to add state
@@ -14,6 +14,10 @@ const [filters, setFilters] = useState<Filters>({
   status:"all",
   priority: "all"
 });
+
+useEffect(()=> {
+  setTasks(loadTasks());
+}, []);
 useEffect(()=> {
   saveTasks(tasks);
   console.log("Saved");
@@ -21,7 +25,7 @@ useEffect(()=> {
 //when taskform button is clicked
  const addTask = (formText: TaskFormInput) => {
     const taskItem: Task ={
-    id: "crypto.randomUUID()",        
+    id: crypto.randomUUID(),        
     title: formText.title,
     description: formText.description,
     dueDate: formText.dueDate,
@@ -46,18 +50,16 @@ const deleteTask = (taskId: string) => {
 
 
   const filterTasks = tasks.filter((task) => {
-    if (filters.status && filters.status !=="all" && task.status !==filters.status) 
-      return false
+    if (filters.status !=="all" && task.status !==filters.status) 
+    return false;
   
-      if (filters.priority && filters.priority !== "all"  && task.priority !== filters.priority){
-        return false;
+    if (filters.priority !== "all"  && task.priority !== filters.priority){
       return true;
-  }
-)
+  });
   return (
     <div>
 
-    {/* <TaskFilter/> */}
+    <TaskFilter onFilterChange={setFilters}/>
      <TaskForm
      placeholderTitle="Whats your task?"
      placeholderDescription="Tell me what your task is about!"
@@ -65,7 +67,7 @@ const deleteTask = (taskId: string) => {
      />
 
     <div className='tasklist'>
-        {tasks.map((task) => (
+        {filterTasks.map((task) => (
             <div key={task.id} className='task-items'>
                 <h2>{task.title}</h2>
                 <p>{task.description}</p>
