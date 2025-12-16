@@ -76,7 +76,7 @@ const updateTaskStatus = (taskId: string, newStatus:Task["status"]) =>{
 
 
   return (
-    <div>
+    <div className='mainbody'>
 
     <TaskFilter onFilterChange={setFilters}/>
      <TaskForm

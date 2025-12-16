@@ -5,6 +5,7 @@ body{
   background-color: #FFDDA1;
   color: #E77728;
   margin-bottom: 10px;
+  margin:0;
 }
 .task-item , .priority, .status {
   padding: 10px;
@@ -13,6 +14,12 @@ body{
   color: #141301;
   border: none;
   margin-bottom: 10px;
+}
+.tasklist{
+  display: flex;
+  gap:12px;
+  flex-direction: row;
+
 }
 
 select{
@@ -35,13 +42,32 @@ button{
 
 .task-items{
   border: 1px solid  #D1462F;
-  padding: 10px;
+  padding: 15px;
   border-radius: 10px;
   margin-bottom: 10px;
+  
 }
 .task label{
   display: block;
   margin: 10px;
+
+}
+
+label{
+  margin-bottom: 10px;
+  display: inline-block;
+
+}
+input , select,  textarea{
+ border-radius: 10px;
+ border: 1px solid;
+}
+
+.mainbody{
+
+  max-width: 900px;
+  margin: 0px;
+  padding: 30px
 }
 /*  Navajo white: FFDDA1
 Golden pollen: #FFD151
