@@ -3,6 +3,7 @@ import { TaskForm } from '../TaskForm/TaskForm';
 // import { TaskItem } from '../TaskList/TaskItem';
  import { TaskFilter } from '../TaskFilter/TaskFilter';
 import type {Task,Filters,  TaskFormInput  } from '../../types';
+
 import  React, {useState, useEffect} from 'react'
 
 
@@ -50,12 +51,18 @@ const deleteTask = (taskId: string) => {
 
 
   const filterTasks = tasks.filter((task) => {
-    if (filters.status !=="all" && task.status !==filters.status) 
-    return false;
-  
-    if (filters.priority !== "all"  && task.priority !== filters.priority){
-      return true;
-  });
+    if (filters.status !== "all" && task.status !==filters.status)
+       return false;
+    if (filters.priority !=="all" && task.priority !== filters.priority) return false;
+    return true;
+  }
+
+)
+
+
+
+
+
   return (
     <div>
 
