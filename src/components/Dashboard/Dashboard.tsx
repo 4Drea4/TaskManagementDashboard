@@ -1,10 +1,9 @@
 // import './App.css';
 import { TaskForm } from '../TaskForm/TaskForm';
-// import { TaskItem } from '../TaskList/TaskItem';
  import { TaskFilter } from '../TaskFilter/TaskFilter';
 import type {Task,Filters,  TaskFormInput  } from '../../types';
 
-import  React, {useState, useEffect} from 'react'
+import  {useState, useEffect} from 'react'
 
 
 //have to add state
