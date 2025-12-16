@@ -65,7 +65,13 @@ const deleteTask = (taskId: string) => {
   }
 
 )
-
+const updateTaskStatus = (taskId: string, newStatus:Task["status"]) =>{
+  setTasks((prev) =>
+  prev.map((task) =>
+    task.id === taskId ? {...task, status:newStatus} :task
+  )
+)
+};
 
 
 
@@ -86,6 +92,19 @@ const deleteTask = (taskId: string) => {
                 <h2>{task.title}</h2>
                 <p>{task.description}</p>
                 <p>{task.dueDate}</p>
+
+                <label>Status</label>
+                <select
+                value={task.status}
+                onChange={(e) =>
+                  updateTaskStatus(task.id, e.target.value as Task["status"])
+                }
+                >
+                  <option value="pending">Pending</option>
+                <option value="in-progress">In Progress</option>
+                <option value="completed">Completed</option>
+                
+                </select>
                <button onClick={() => deleteTask(task.id)}>Delete</button>
 
                
