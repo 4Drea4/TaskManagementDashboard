@@ -43,8 +43,8 @@ export interface TaskFilterProps{
 }
 
 export interface Filters{
-    status?: TaskStatus;
-    priority?: TaskPriority;
+    status?:"all-status" |TaskStatus;
+    priority?: "all-priority" | TaskPriority;
 }
 
 

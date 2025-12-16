@@ -3,7 +3,10 @@ import type { TaskFilterProps } from "../../types";
 import type { Filters } from "../../types";
 
 export const TaskFilter: React.FC<TaskFilterProps> = ({onFilterChange}) => {
-    const [filters, setFilters] = useState<Filters>({});
+    const [filters, setFilters] = useState<Filters>({
+        status:"all-status",
+        priority:"all-priority"
+    });
     const handleChange = (event: React.ChangeEvent<HTMLSelectElement> ) => {
         const {name, value} = event.target;
         const updateFilters : Filters = {...filters,

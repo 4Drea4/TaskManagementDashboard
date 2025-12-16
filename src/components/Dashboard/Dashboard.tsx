@@ -12,8 +12,8 @@ import  React, {useState, useEffect} from 'react'
 export const Dashboard = () => {
 const [tasks, setTasks] = useState<Task[]>([]);
 const [filters, setFilters] = useState<Filters>({
-  status:"all",
-  priority: "all"
+  status:"all-status",
+  priority: "all-priority"
 });
 
 useEffect(()=> {
@@ -51,9 +51,9 @@ const deleteTask = (taskId: string) => {
 
 
   const filterTasks = tasks.filter((task) => {
-    if (filters.status !== "all" && task.status !==filters.status)
+    if (filters.status !== "all-status" && task.status !==filters.status)
        return false;
-    if (filters.priority !=="all" && task.priority !== filters.priority) return false;
+    if (filters.priority !=="all-priority" && task.priority !== filters.priority) return false;
     return true;
   }
 
