@@ -72,9 +72,6 @@ const updateTaskStatus = (taskId: string, newStatus:Task["status"]) =>{
 )
 };
 
-
-
-
   return (
     <div className='mainbody'>
 
