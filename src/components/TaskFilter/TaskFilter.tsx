@@ -18,6 +18,20 @@ export const TaskFilter: React.FC<TaskFilterProps> = ({onFilterChange}) => {
     };
     return (
         <div className="filter">
+
+            {/* //search  */}
+            <label>Search</label>
+            <input
+            className="search"
+              name='search'
+              value={filters.search}
+              onChange={(e) => {
+                const update ={ ...filters, search: e.target.value};
+                setFilters(update);
+                onFilterChange(update);
+              }}
+              placeholder="Search"
+              />
             <label> Select Status:</label>
             <select name="status"
             className="status"
@@ -37,17 +51,7 @@ export const TaskFilter: React.FC<TaskFilterProps> = ({onFilterChange}) => {
                 value={filters.priority}
                 onChange={handleChange}>
               
-              {/* //search  */}
-              <input
-              name='search'
-              value={filters.search}
-              onChange={(e) => {
-                const update ={ ...filters, search: e.target.value};
-                setFilters(update);
-                onFilterChange(update);
-              }}
-              placeholder="Search"
-              />
+              
               
                 <option value="All-priority">All Priorities</option>
                 <option value="low">Low</option>

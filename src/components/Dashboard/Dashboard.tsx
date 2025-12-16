@@ -62,6 +62,11 @@ const deleteTask = (taskId: string) => {
        return false;
     if (filters.priority !=="all-priority" && task.priority !== filters.priority) return false;
 
+    //search
+    if(filters.search){
+      const text = (task.title +task.description);
+        if(!text.includes(filters.search)) return false;
+    }
     
     return true;
   }

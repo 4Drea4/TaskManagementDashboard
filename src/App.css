@@ -7,7 +7,7 @@ body{
   margin-bottom: 10px;
   margin:0;
 }
-.task-item , .priority, .status {
+.task-item , .priority, .status ,.search{
   padding: 10px;
   border-radius: 10px;
   background-color: #FFD151 ;
