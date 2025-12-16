@@ -66,9 +66,9 @@
   #### Lessons:
   *In order to reference certain lessons with ease I am placing them here:*
   * [Implement list rendering with proper key management](https://ps-lms.vercel.app/curriculum/se/415/lab-3)
-  * [Form](https://ps-lms.vercel.app/curriculum/se/415/lesson-8): 
-          - Create a controlled form for adding/editing tasks
-          - Handle form submission
+  * [Form](https://ps-lms.vercel.app/curriculum/se/415/lesson-8): <br>
+          - Create a controlled form for adding/editing tasks <br>
+          - Handle form submission <br>
   * [Local Storage:]() 
   * [Error Handling](https://perscholas.instructure.com/courses/2978/pages/module-6-typescript-and-advanced-javascript)
 

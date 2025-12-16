@@ -3,15 +3,21 @@ import  React  from 'react';
 import { TaskForm } from '../TaskForm/TaskForm';
 // import { TaskItem } from '../TaskList/TaskItem';
 // import { TaskFilter } from '../TaskFilter/TaskFilter';
-import type {Task,  TaskFormInput  } from '../../types';
+import type {Task,Filters,  TaskFormInput  } from '../../types';
 import {useState} from 'react'
 
 //have to add state
 
 export const Dashboard = () => {
 const [tasks, setTasks] = useState<Task[]>([]);
-
-
+const [filters, setFilters] = useState<Filters>({
+  status:"all",
+  priority: "all"
+});
+useEffect(()=> {
+  saveToStorage(tasks);
+  console.log("Saved");
+},[tasks]);
 //when taskform button is clicked
  const addTask = (formText: TaskFormInput) => {
     const taskItem: Task ={
